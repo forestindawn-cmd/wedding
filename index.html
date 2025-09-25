@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 청첩장</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 폰트: Noto Sans KR -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- 외부 스타일 시트 연결 -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome Icons for Modal Navigation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="antialiased">
+    <!-- Falling Petals Canvas -->
+    <canvas id="falling-petals" class="fixed top-0 left-0 w-full h-full pointer-events-none z-10"></canvas>
+
+    <!-- Hero Section -->
+    <section class="hero-image flex items-center justify-center text-center text-white relative">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 p-6 rounded-xl">
+            <h1 class="text-3xl md:text-5xl font-light mb-4 tracking-wider">김민준 & 박지수</h1>
+            <p class="text-lg md:text-xl font-thin tracking-wide">사랑의 결실을 맺는 날</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12 md:py-24 px-6 md:px-12 bg-white text-center">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-2xl font-light mb-4 text-gray-800">초대합니다</h2>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                저희 두 사람이 평생을 함께하기로 약속했습니다.<br>
+                서로를 향한 따뜻한 사랑으로 채워갈 저희의 새로운 시작을<br>
+                가까이서 축복해 주시면 감사하겠습니다.<br>
+                귀한 발걸음 하시어 저희의 출발을 응원해 주세요.
+            </p>
+        </div>
+    </section>
+
+    <!-- Third Photo Section -->
+    <section class="w-full">
+        <img src="assets/images/img02.jpg" alt="결혼식 사진" class="w-full h-auto object-cover">
+    </section>
+    
+    <!-- Calendar Section -->
+    <section class="py-12 md:py-24 px-6 text-center">
+        <div class="max-w-md mx-auto">
+            <h2 class="text-2xl font-light mb-6 text-gray-800">결혼식 날짜</h2>
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="flex justify-between items-center mb-4 text-gray-700 font-semibold">
+                    <span class="text-xl">12월</span>
+                    <span class="text-sm">2025년</span>
+                </div>
+                <div class="grid grid-cols-7 gap-2 text-xs md:text-sm text-gray-500">
+                    <div class="font-bold text-red-500">일</div>
+                    <div class="font-bold">월</div>
+                    <div class="font-bold">화</div>
+                    <div class="font-bold">수</div>
+                    <div class="font-bold">목</div>
+                    <div class="font-bold">금</div>
+                    <div class="font-bold text-blue-500">토</div>
+                    <!-- Calendar days -->
+                    <div class="col-start-3"></div>
+                    <div class="col-start-4"></div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                    <div>13</div>
+                    <div>14</div>
+                    <div>15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                    <div>20</div>
+                    <div>21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div>24</div>
+                    <div class="p-2 rounded-full bg-orange-400 text-white font-bold transform scale-110 shadow-lg">25</div>
+                    <div>26</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div>30</div>
+                    <div>31</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-12 md:py-24 px-6 bg-white">
+        <h2 class="text-2xl font-light mb-8 text-center text-gray-800">갤러리</h2>
+        <div class="max-w-3xl mx-auto grid grid-cols-3 gap-2 md:gap-4">
+            <img src="assets/images/img03.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+            <img src="assets/images/img04.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+            <img src="assets/images/img05.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+            <img src="assets/images/img06.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+            <img src="assets/images/img07.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+            <img src="assets/images/img08.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+            <img src="assets/images/img09.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+            <img src="assets/images/img10.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+            <img src="assets/images/img11.jpg" alt="갤러리 사진" class="gallery-item rounded-lg shadow-md cursor-pointer">
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-12 md:py-24 px-6 text-center">
+        <h2 class="text-2xl font-light mb-6 text-gray-800">오시는 길</h2>
+        <div class="max-w-xl mx-auto">
+            <p class="mb-4 text-gray-600">인천광역시 연수구 송도동 123-456</p>
+            <p class="text-sm mb-4 text-gray-500">주차는 웨딩홀 건물 내에 가능합니다.</p>
+        </div>
+        <div id="map" class="w-full mx-auto rounded-lg shadow-md" style="height:350px;"></div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="확대된 갤러리 이미지" class="modal-image">
+            <button id="prev-btn" class="nav-button prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="next-btn" class="nav-button next-button"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Music Player Section -->
+    <section class="py-8 bg-white">
+        <div class="max-w-xl mx-auto px-6">
+            <div id="music-player" class="music-player-bottom">
+                <audio id="background-music" preload="auto" loop>
+                    <source src="assets/audio/Igor_Pumphonia_-_I_Said_Your_Love__Dub_.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="music-controls">
+                    <button id="play-pause-btn" class="control-btn">
+                        <i class="fa-solid fa-play" id="play-icon"></i>
+                        <i class="fa-solid fa-pause" id="pause-icon" style="display: none;"></i>
+                    </button>
+                    <div class="music-info">
+                        <span class="music-title">♪ Wedding Background Music</span>
+                        <span class="music-subtitle">사랑을 축복하는 음악</span>
+                    </div>
+                    <button id="volume-btn" class="control-btn">
+                        <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 카카오맵 SDK와 JavaScript 파일 연결 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=751c1a6b9498a9f4e947fb2a1186b27e"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
